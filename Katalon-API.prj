@@ -6,6 +6,7 @@
    <UUID>d3a01f3a-53bd-47d1-8097-e5c4f8a7aa38</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\arums\git\Katalon-API\Katalon-API.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
