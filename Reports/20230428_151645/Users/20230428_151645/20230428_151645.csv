@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Users,,,,2023-04-28 15:16:48,2023-04-28 15:16:54,5.758s,ERROR
+,,,,,,,
+Test Cases/Auth/registration,,,,2023-04-28 15:16:49,2023-04-28 15:16:53,4.273s,PASSED
+faker = new com.github.javafaker.Faker(),,,,2023-04-28 15:16:49,2023-04-28 15:16:49,0.045s,PASSED
+name = name().fullName(),,,,2023-04-28 15:16:49,2023-04-28 15:16:49,0.374s,PASSED
+email = internet().emailAddress(),,,,2023-04-28 15:16:49,2023-04-28 15:16:49,0.042s,PASSED
+password = internet().password(),,,,2023-04-28 15:16:49,2023-04-28 15:16:49,0.003s,PASSED
+out.println(name),,,,2023-04-28 15:16:49,2023-04-28 15:16:49,0.025s,PASSED
+out.println(email),,,,2023-04-28 15:16:49,2023-04-28 15:16:49,0.002s,PASSED
+out.println(password),,,,2023-04-28 15:16:49,2023-04-28 15:16:49,0.004s,PASSED
+"response = sendRequest(findTestObject(""Auth/registration""))",,,,2023-04-28 15:16:49,2023-04-28 15:16:53,3.241s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,2023-04-28 15:16:53,2023-04-28 15:16:53,0.015s,PASSED
+"verifyElementPropertyValue(response, ""status"", ""success"")",,,,2023-04-28 15:16:53,2023-04-28 15:16:53,0.053s,PASSED
+"verifyElementPropertyValue(response, ""message"", ""Toko berhasil didaftarkan"")",,,,2023-04-28 15:16:53,2023-04-28 15:16:53,0.020s,PASSED
+"verifyElementPropertyValue(response, ""data.name"", name)",,,,2023-04-28 15:16:53,2023-04-28 15:16:53,0.017s,PASSED
+"verifyElementPropertyValue(response, ""data.email"", email)",,,,2023-04-28 15:16:53,2023-04-28 15:16:53,0.023s,PASSED
+,,,,,,,
+Test Cases/Auth/login,,,,2023-04-28 15:16:53,2023-04-28 15:16:54,0.937s,ERROR
+jsonSlurper = new groovy.json.JsonSlurper(),,,,2023-04-28 15:16:53,2023-04-28 15:16:53,0.000s,PASSED
+"response = sendRequest(findTestObject(""Auth/login""))",,,,2023-04-28 15:16:53,2023-04-28 15:16:54,0.630s,PASSED
+jsonResponse = jsonSlurper.parseText(response.getResponseBodyContent()),,,,2023-04-28 15:16:54,2023-04-28 15:16:54,0.009s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,2023-04-28 15:16:54,2023-04-28 15:16:54,0.003s,PASSED
+"verifyElementPropertyValue(response, ""status"", ""success"")",,,,2023-04-28 15:16:54,2023-04-28 15:16:54,0.019s,PASSED
+"verifyElementPropertyValue(response, ""message"", ""Authentication berhasil ditambahkan"")",,,,2023-04-28 15:16:54,2023-04-28 15:16:54,0.025s,PASSED
+accessToken = accessToken,,,,2023-04-28 15:16:54,2023-04-28 15:16:54,0.001s,PASSED
+schemaAssertion.LoginSchemaAssertion.loginSchemaAssertion(response),,,,2023-04-28 15:16:54,2023-04-28 15:16:54,0.020s,ERROR
+,,,,,,,
+Test Cases/Users/add user,,,,2023-04-28 15:16:54,2023-04-28 15:16:54,0.246s,PASSED
+return null,,,,2023-04-28 15:16:54,2023-04-28 15:16:54,0.001s,PASSED

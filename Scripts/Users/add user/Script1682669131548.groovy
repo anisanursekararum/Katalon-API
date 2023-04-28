@@ -16,21 +16,4 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import groovy.json.JsonSlurper as JsonSlurper
-
-def jsonSlurper = new JsonSlurper()
-
-response = WS.sendRequest(findTestObject('Auth/login'))
-
-def jsonResponse = jsonSlurper.parseText(response.getResponseBodyContent())
-
-WS.verifyResponseStatusCode(response, 201)
-
-WS.verifyElementPropertyValue(response, 'status', 'success')
-
-WS.verifyElementPropertyValue(response, 'message', 'Authentication berhasil ditambahkan')
-
-GlobalVariable.accessToken = jsonResponse.data.accessToken
-
-CustomKeywords.'schemaAssertion.LoginSchemaAssertion.loginSchemaAssertion'(response)
 

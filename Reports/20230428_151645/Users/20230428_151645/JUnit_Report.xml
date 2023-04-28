@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Users" time="5.758" tests="3" failures="0" errors="1">
+   <testsuite name="Users" tests="3" failures="0" errors="1" time="5.758" skipped="0" timestamp="2023-04-28 15:16:48" hostname="arums - 192.168.0.6" id="Test Suites/Users">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="F:\\bootcampKatalon\\session 2\\Katalon-API\\Reports\\20230428_151645\\Users\\20230428_151645"/>
+         <property name="logFiles" value="F:\\bootcampKatalon\\session 2\\Katalon-API\\Reports\\20230428_151645\\Users\\20230428_151645\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="arums - 192.168.0.6"/>
+         <property name="hostAddress" value="192.168.0.6"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.6.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Auth/registration" time="4.273" classname="Test Cases/Auth/registration" status="PASSED">
+         <system-out><![CDATA[2023-04-28 15:16:49 - [TEST_CASE][PASSED] - Test Cases/Auth/registration: Test Cases/Auth/registration
+
+2023-04-28 15:16:49 - [TEST_STEP][PASSED] - faker = new com.github.javafaker.Faker(): null
+
+2023-04-28 15:16:49 - [TEST_STEP][PASSED] - name = name().fullName(): null
+
+2023-04-28 15:16:49 - [TEST_STEP][PASSED] - email = internet().emailAddress(): null
+
+2023-04-28 15:16:49 - [TEST_STEP][PASSED] - password = internet().password(): null
+
+2023-04-28 15:16:49 - [TEST_STEP][PASSED] - out.println(name): null
+
+2023-04-28 15:16:49 - [TEST_STEP][PASSED] - out.println(email): null
+
+2023-04-28 15:16:49 - [TEST_STEP][PASSED] - out.println(password): null
+
+2023-04-28 15:16:49 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Auth/registration")): Send request successfully
+
+2023-04-28 15:16:53 - [MESSAGE][INFO] - HAR: F:\bootcampKatalon\session 2\Katalon-API\Reports\20230428_151645\Users\20230428_151645\requests\main\0.har
+
+2023-04-28 15:16:53 - [MESSAGE][PASSED] - Send request successfully
+
+2023-04-28 15:16:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2023-04-28 15:16:53 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-04-28 15:16:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "status", "success"): Verify element property value successfully
+
+2023-04-28 15:16:53 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-04-28 15:16:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "message", "Toko berhasil didaftarkan"): Verify element property value successfully
+
+2023-04-28 15:16:53 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-04-28 15:16:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.name", name): Verify element property value successfully
+
+2023-04-28 15:16:53 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-04-28 15:16:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.email", email): Verify element property value successfully
+
+2023-04-28 15:16:53 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Auth/login" time="0.937" classname="Test Cases/Auth/login" status="ERROR">
+         <error type="ERROR" message="Test Cases/Auth/login FAILED.
+Reason:
+java.lang.ClassNotFoundException: schemaAssertion.LoginSchemaAssertion
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.getCustomKeywordClassAndSetMetaClass(CustomKeywordDelegatingMetaClass.java:105)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at login.run(login:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1682669805730.run(TempTestSuite1682669805730.groovy:36)
+"/>
+         <system-out><![CDATA[2023-04-28 15:16:53 - [TEST_CASE][ERROR] - Test Cases/Auth/login: Test Cases/Auth/login FAILED.
+Reason:
+java.lang.ClassNotFoundException: schemaAssertion.LoginSchemaAssertion
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.getCustomKeywordClassAndSetMetaClass(CustomKeywordDelegatingMetaClass.java:105)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at login.run(login:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1682669805730.run(TempTestSuite1682669805730.groovy:36)
+
+
+2023-04-28 15:16:53 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2023-04-28 15:16:53 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Auth/login")): Send request successfully
+
+2023-04-28 15:16:54 - [MESSAGE][INFO] - HAR: F:\bootcampKatalon\session 2\Katalon-API\Reports\20230428_151645\Users\20230428_151645\requests\main\1.har
+
+2023-04-28 15:16:54 - [MESSAGE][PASSED] - Send request successfully
+
+2023-04-28 15:16:54 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseBodyContent()): null
+
+2023-04-28 15:16:54 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2023-04-28 15:16:54 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-04-28 15:16:54 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "status", "success"): Verify element property value successfully
+
+2023-04-28 15:16:54 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-04-28 15:16:54 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "message", "Authentication berhasil ditambahkan"): Verify element property value successfully
+
+2023-04-28 15:16:54 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-04-28 15:16:54 - [TEST_STEP][PASSED] - accessToken = accessToken: null
+
+2023-04-28 15:16:54 - [TEST_STEP][ERROR] - schemaAssertion.LoginSchemaAssertion.loginSchemaAssertion(response): Test Cases/Auth/login FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.ClassNotFoundException: schemaAssertion.LoginSchemaAssertion
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:101)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at login.run(login:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1682669805730.run(TempTestSuite1682669805730.groovy:36)
+Caused by: java.lang.ClassNotFoundException: schemaAssertion.LoginSchemaAssertion
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.getCustomKeywordClassAndSetMetaClass(CustomKeywordDelegatingMetaClass.java:105)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more
+
+
+2023-04-28 15:16:54 - [MESSAGE][ERROR] - schemaAssertion.LoginSchemaAssertion
+
+2023-04-28 15:16:54 - [MESSAGE][ERROR] - Test Cases/Auth/login FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.ClassNotFoundException: schemaAssertion.LoginSchemaAssertion
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:101)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at login.run(login:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1682669805730.run(TempTestSuite1682669805730.groovy:36)
+Caused by: java.lang.ClassNotFoundException: schemaAssertion.LoginSchemaAssertion
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.getCustomKeywordClassAndSetMetaClass(CustomKeywordDelegatingMetaClass.java:105)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[2023-04-28 15:16:53 - [TEST_CASE][ERROR] - Test Cases/Auth/login: Test Cases/Auth/login FAILED.
+Reason:
+java.lang.ClassNotFoundException: schemaAssertion.LoginSchemaAssertion
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.getCustomKeywordClassAndSetMetaClass(CustomKeywordDelegatingMetaClass.java:105)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at login.run(login:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1682669805730.run(TempTestSuite1682669805730.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Users/add user" time="0.246" classname="Test Cases/Users/add user" status="PASSED">
+         <system-out><![CDATA[2023-04-28 15:16:54 - [TEST_CASE][PASSED] - Test Cases/Users/add user: Test Cases/Users/add user
+
+2023-04-28 15:16:54 - [TEST_STEP][PASSED] - return null: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-04-28 15:16:48 - [TEST_SUITE][ERROR] - Users: Test Cases/Auth/login FAILED.
+Reason:
+java.lang.ClassNotFoundException: schemaAssertion.LoginSchemaAssertion
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.getCustomKeywordClassAndSetMetaClass(CustomKeywordDelegatingMetaClass.java:105)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at login.run(login:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1682669805730.run(TempTestSuite1682669805730.groovy:36)]]></system-out>
+      <system-err><![CDATA[2023-04-28 15:16:48 - [TEST_SUITE][ERROR] - Users: Test Cases/Auth/login FAILED.
+Reason:
+java.lang.ClassNotFoundException: schemaAssertion.LoginSchemaAssertion
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.getCustomKeywordClassAndSetMetaClass(CustomKeywordDelegatingMetaClass.java:105)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at login.run(login:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1682669805730.run(TempTestSuite1682669805730.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

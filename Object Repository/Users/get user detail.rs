@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>login</name>
+   <name>get user detail</name>
    <tag></tag>
-   <elementGuidId>0c3fcf0b-f269-45b6-878f-63abfa8dd031</elementGuidId>
+   <elementGuidId>4eeb5f47-0bcb-4255-8d8e-e17d293ebaeb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <authorizationRequest>
+      <authorizationInfo>
+         <entry>
+            <key>bearerToken</key>
+            <value>${GlobalVariable.accessToken}</value>
+         </entry>
+      </authorizationInfo>
+      <authorizationType>Bearer</authorizationType>
+   </authorizationRequest>
    <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;email\&quot;: \&quot;${email}\&quot;,\n    \&quot;password\&quot;: \&quot;${password}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;${name}\&quot;,\n    \&quot;email\&quot;: \&quot;${email}\&quot;,\n    \&quot;password\&quot;: \&quot;${password}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -22,13 +31,13 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>12fb80a1-a855-4c2c-a7e0-cb1aa29a0377</webElementGuid>
+      <webElementGuid>cb83a556-55ca-4c88-8dea-ba21f903df01</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/authentications</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${GlobalVariable.baseUrl}/users/${GlobalVariable.userId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -40,21 +49,21 @@
    <variables>
       <defaultValue>GlobalVariable.name</defaultValue>
       <description></description>
-      <id>1b6fc137-208d-451a-a390-f4bb15705c21</id>
+      <id>28d9539c-5fe2-4c8c-afe0-db74164c4c61</id>
       <masked>false</masked>
       <name>name</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.email</defaultValue>
       <description></description>
-      <id>3208d7f4-232d-485a-85bb-7a5b52c0c0c7</id>
+      <id>6ad95e41-f847-4041-b3dc-a5543fb73c1c</id>
       <masked>false</masked>
       <name>email</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.password</defaultValue>
       <description></description>
-      <id>de3b245e-59bd-485d-9e6b-2f431515aed0</id>
+      <id>bc345680-4a8f-4576-9d90-9c3c33cf4822</id>
       <masked>false</masked>
       <name>password</name>
    </variables>
@@ -70,10 +79,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-WS.verifyResponseStatusCode(response, 201)
-
-assertThat(response.getStatusCode()).isEqualTo(201)</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
