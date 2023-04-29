@@ -28,10 +28,18 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${GlobalVariable.accessToken}</value>
+      <webElementGuid>6cae549c-1479-4603-b38f-14e786b50517</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>cb83a556-55ca-4c88-8dea-ba21f903df01</webElementGuid>
+      <webElementGuid>693c8b25-ab75-47ab-8607-5d1ed03c01b0</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>

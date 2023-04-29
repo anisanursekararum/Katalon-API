@@ -21,7 +21,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class LoginSchemaAssertion {
-	
+
 	@Keyword
 	def static void loginSchemaAssertion(Object response) {
 		String jsonSchema =

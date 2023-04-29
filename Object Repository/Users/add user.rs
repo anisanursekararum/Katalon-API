@@ -31,7 +31,15 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>7738b36d-93d5-4521-90af-8c450ba609dc</webElementGuid>
+      <webElementGuid>9e90fc9d-64b7-49e2-9470-d9681a67f084</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${GlobalVariable.accessToken}</value>
+      <webElementGuid>448bd84b-8791-4bdf-aef7-8eb29f97f47f</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
@@ -66,6 +74,20 @@
       <id>bd4cad53-3c02-4188-a322-6b0cf3cb4d57</id>
       <masked>false</masked>
       <name>password</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.accessToken</defaultValue>
+      <description></description>
+      <id>1a66c02e-aebd-463a-9eb4-f6363ec4edac</id>
+      <masked>false</masked>
+      <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.userId</defaultValue>
+      <description></description>
+      <id>5aa30e31-0b95-4954-bc62-695085218637</id>
+      <masked>false</masked>
+      <name>userId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

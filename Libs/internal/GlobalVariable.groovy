@@ -34,6 +34,11 @@ public class GlobalVariable {
      */
     public static Object accessToken
      
+    /**
+     * <p></p>
+     */
+    public static Object userId
+     
 
     static {
         try {
@@ -46,6 +51,7 @@ public class GlobalVariable {
             email = selectedVariables['email']
             password = selectedVariables['password']
             accessToken = selectedVariables['accessToken']
+            userId = selectedVariables['userId']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

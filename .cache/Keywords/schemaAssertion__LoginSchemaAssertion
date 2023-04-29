@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "E3C3742F24F9F4C713CF7C94BAD87C30",
+  "keywordClasses": [
+    {
+      "name": "schemaAssertion.LoginSchemaAssertion",
+      "keywordMethods": [
+        {
+          "name": "loginSchemaAssertion",
+          "parameters": [
+            {
+              "name": "response",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
